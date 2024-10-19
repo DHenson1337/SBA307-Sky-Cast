@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sky-Cast</title>
+    <link rel="stylesheet" href="styles/style.css">
+    
+    <!-- Internal Styling -->
+    <style>
+        .main h2{
+            
+    text-decoration: underline;
+    font-size: 52px;
+    font-family: monospace;
+    letter-spacing: 5px;
+        }
+
+        .main h2 , a{
+    background: linear-gradient(to right, #0d64c7, #0099ff , #28aeec, #ffffff, #437dce);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 6s ease-in-out infinite;
+    background-size: 400% 100%;
+}
+
+@keyframes rainbow_animation {
+    0%,100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="images/Logo.png" alt="" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="">Sky-Cast Home</a></li>
+                    <li><a href="">More Info</a></li>
+                    <li><a href="">Sign-up</a></li>
+                    <li><a href="">Updates</a></li>
+                </ul>
+            </nav>
+            <img src="images/menu.png" alt="" class="menu-icon">
+        </div>
+        <div class="row">
+            <div class="main">
+                <h2><a href="#">Sky</a> Cast<span>&#8482;</span> </h2> </small>
+                <h3>Platforms: PC, PS5, Xbox S|X</h3>
+                <!-- Inline Styling -->
+                <a href="#" class="moreinfo"> Click <span style="color: #0ae2ff">Sky</span> to Learn more!
+
+                </a>
+                <h4>$69.99/yr</h4>
+                <a href="#" class="subscribe">
+                    <button type="button">Subscribe<img src="images/arrow.png" alt="Action Button"> <a
+                            href=""></a></button>
+                </a>
+            </div>
+
+            <div class="product">
+                <img src="images/Product.gif" alt="Advertised Game" class="game">
+
+            </div>
+        </div>
+        <div class="socialmedia">
+            <img src="images/gaming1.png" alt="Fake Steam Icon">
+            <img src="images/Fake Playstation Icon.PNG" alt="Fake Playstation Icon">
+            <img src="images/FakeXbox.PNG" alt="FakeXbox Icon">
+        </div>
+    </div>
+</body>
+
+</html>

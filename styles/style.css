@@ -1,0 +1,180 @@
+/*  */
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: rgb(13, 13, 13);
+    color: white;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 8%;
+    padding: left 8%;
+    box-sizing: hidden;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.navbar nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.navbar nav ul li a{
+font-size: 23px;
+border-radius: 15px;
+font-weight:bold;
+
+}
+
+
+
+.logo {
+    width: 50px;
+    cursor: pointer;
+    margin: 30px 0;
+}
+
+.menu-icon {
+    width: 25px;
+    cursor: pointer;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #d8d8d8;
+    font-size: 14px;
+}
+
+nav ul li a:hover {
+    color: #0088ff;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
+}
+
+.main {
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 50px;
+}
+
+
+
+
+.main h3 {
+    font-size: 30px;
+    color: #707070;
+    font-weight: 100;
+    margin: 20px 0 10px
+}
+
+.main h4 {
+    margin: 30px 0;
+    font-size: 14px;
+}
+
+.moreinfo {
+    font-size: 20px;
+    color: #dfd7d7;
+    font-weight: 100;
+}
+.moreinfo:hover{
+    color: #ff3527;
+}
+
+.subscribe {
+    background-color: transparent;
+}
+
+.subscribe img {
+    background-color: transparent;
+}
+
+button {
+    width: 140px;
+    border: 0;
+    padding: 12px 10px;
+    outline: none;
+    color: #fff;
+    background: linear-gradient(to right, #fb5283, #ff3527);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: width 1s;
+}
+
+button img {
+    width: 30px;
+    display: none;
+}
+
+button:hover img {
+    display: block;
+}
+
+button:hover {
+    width: 160px;
+    display: flex;
+    align-items: center;
+}
+
+/*The line left of the main picture */
+.main::after {
+    content: '';
+    width: 10px;
+    height: 57%;
+    background: linear-gradient(to right, #2e89ff, #2e62ff);
+    position: absolute;
+    left: -40px;
+    top: 8px;
+}
+
+.product {
+    position: relative;
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+}
+
+.product .game {
+    width: 90%;
+    border: #0088ff;
+    border-radius: 10px;
+}
+
+.socialmedia img{
+    height: 16px;
+    width: 16px;
+    margin: 20px;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+}
+.socialmedia{
+    text-align: center;
+}
+
