@@ -6,16 +6,22 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    background-color: rgb(13, 13, 13);
+    background-image: url(../images/bg5.webp);
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
     color: white;
+    background-color: black;
 }
 
 .container {
-    width: 100%;
+    width: 90%;
     min-height: 100vh;
     padding-left: 8%;
     padding: left 8%;
     box-sizing: hidden;
+    flex-wrap: wrap;
 }
 
 .navbar {
@@ -26,7 +32,6 @@
 .navbar nav ul {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
     justify-content: space-evenly;
 }
 .navbar nav ul li a{
@@ -70,6 +75,48 @@ nav ul li a:hover {
     color: #0088ff;
 }
 
+
+.navbar .logo{
+    transition: transform 1s ease-in;
+  }
+  
+  .navbar .logo:hover{
+    transform: rotate(900deg);
+    opacity: 90%;
+ 
+
+  }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    /* background-color: #1c1111; */
+    min-width: 16px;
+    box-shadow: 1px 1px 1px 1px rgba(2, 217, 255, 0.746);
+    padding: -12px -18px;
+    z-index: 1;
+    list-style-type: none;
+    font-size: 19px;
+
+  }
+  .dropdown img{
+    transition: transform .7s ease-in-out;
+  }
+  
+  .dropdown img:hover{
+    transform: rotate(360deg);
+
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+    left: auto;
+    right: 0%;
+    transition:0.1s;
+
+  }
+
+
 .row {
     display: flex;
     justify-content: space-between;
@@ -97,6 +144,26 @@ nav ul li a:hover {
     margin: 30px 0;
     font-size: 14px;
 }
+.main button img{
+    background: transparent;
+    position: absolute; left: 30px; 
+    width: 30px
+}
+
+.row img{
+    cursor: pointer;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 2s;
+    -webkit-transition-timing-function: ease;
+
+    transition-property: all;
+    transition-duration: 10s;
+    transition-timing-function: ease;
+}
+.row img:hover{
+    transform: scale(1.1);
+
+}
 
 .moreinfo {
     font-size: 20px;
@@ -109,10 +176,15 @@ nav ul li a:hover {
 
 .subscribe {
     background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
 }
 
 .subscribe img {
     background-color: transparent;
+   margin: 80px;
 }
 
 button {
@@ -137,7 +209,7 @@ button:hover img {
 }
 
 button:hover {
-    width: 160px;
+    width: 150px;
     display: flex;
     align-items: center;
 }
@@ -175,6 +247,10 @@ button:hover {
     border-radius: 15px;
 }
 .socialmedia{
-    text-align: center;
+    display: flex;
+    justify-content: center; 
 }
-
+.copyright {
+    text-align: center;
+    font-size: 12px;
+}
