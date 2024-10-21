@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyCast Info</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Internal Styling -->
+    <style>
+        .main h2 {
+
+            text-decoration: underline;
+            font-size: 52px;
+            font-family: monospace;
+            letter-spacing: 5px;
+        }
+
+        .main h2,
+        a {
+            background: linear-gradient(to right, #0d64c7, #0099ff, #28aeec, #ffffff, #437dce);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            animation: rainbow_animation 6s ease-in-out infinite;
+            background-size: 400% 100%;
+        }
+
+        .main {
+            flex-basis: 85%;
+            position: relative;
+            margin-left: 50px;
+        }
+
+        @keyframes rainbow_animation {
+
+            0%,
+            100% {
+                background-position: 0 0;
+            }
+
+            50% {
+                background-position: 100% 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="../images/Logo.png" alt="" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="../index.html">SkyCast Home</a></li>
+                    <li><a href="#">More Info</a></li>
+                    <li><a href="./signup.html">Sign-up</a></li>
+                    <li><a href="">Games</a></li>
+                    <li><a href="">Updates</a></li>
+                </ul>
+            </nav>
+            <div class="dropdown">
+                <span><img src="../images/settingsicon1.png" alt="" class="menu-icon"></span>
+                <div class="dropdown-content">
+                    <li><a href="#">Contact-US</a></li>
+                    <li><a href="../pages/subscription.html">Manage Subscription</a></li>
+                    <li><a href="#">Packages</a></li>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="row">
+            <div class="main" style="float: right;">
+                <h2><a href="#">Sky</a> Cast&#8482; </h2> </small>
+                <p>Tune into the world of Tele Phision and decide the fate of humanity—will you help them thrive in the
+                    Cyber world or lead them astray?</p>
+                <br>
+                <p>Introducing SkyCast—the thrilling new frontier in text adventure MMORPGs! Immerse yourself in a
+                    vibrant world where your choices shape the narrative and your adventures know no bounds. Join a
+                    community of passionate players, embark on epic quests, and unleash your imagination in a universe
+                    filled with endless possibilities. Are you ready to create your own legend? Dive into SkyCast today
+                    and experience the adventure of a lifetime!</p>
+
+                <!-- Bootstrap Carousel -->
+                <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../images/Skycast.gif" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../images/SkyNight.gif" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../images/Skycastday.gif" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                    <h2>SkyCast: Classes & Progressions</h2>
+                <table class="table table-dark table-hover" style="text-align: center;">
+                    <tr>
+                        <td>Programming Student</td>
+                        <td>Front-end Developer</td>
+                        <td>Back-end Developer</td>
+                    </tr>
+                    <tr>
+                        <td>  &#9770;Code Wizard</td>
+                        <td>&#9889;High Templar of Mystic Language </td>
+                        <td>&#10024;Framework Architect</td>
+                    </tr>
+                    <tr>
+                        <td> &#9770;SkyNet Hacker&#9770;</td>
+                        <td>&#9889;Cascading Style Spartan&#9889;</td>
+                        <td>&#10024;Warden of the Java Scripts&#10024;</td>
+                    </tr>
+                  </table>
+                <!-- Inline Styling -->
+                <a href="./signup.html" class="moreinfo"> More <span style="color: #0ae2ff">Sky</span> Classes and updates soon!
+
+                </a>
+                <h4>$69.99/yr</h4>
+                <a href="./signup.html" class="subscribe">
+                    <button type="button">Subscribe<img src="images/arrow5.png" alt="Action Button"> <a
+                            href=""></a></button>
+                </a>
+
+                
+            </div>
+
+
+            <div class="product">
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+        <div class="socialmedia">
+            <img src="../images/Fake Playstation Icon.PNG" alt="Fake Playstation Icon?">
+            <img src="../images/Fakesteamicon.PNG" alt="Fake Steam Icon" style="background-color: #0d64c7; ">
+            <img src="../images/FakeXbox.PNG" alt="FakeXbox Icon">
+
+        </div>
+        <p class="copyright"><span>&#169;</span> 2024-2025 PandaPunk Studios: Davon Henson</p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

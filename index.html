@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sky-Cast</title>
+    <title>SkyCast. Next Gen Text Based MMORPG</title>
     <link rel="stylesheet" href="styles/style.css">
     
     <!-- Internal Styling -->
@@ -26,6 +26,19 @@
     background-size: 400% 100%;
 }
 
+/* Button animations */
+button:hover img {
+    display: block;
+}
+
+button:hover {
+    width: 150px;
+    display: flex;
+    align-items: center;
+}
+
+
+
 @keyframes rainbow_animation {
     0%,100% {
         background-position: 0 0;
@@ -44,9 +57,9 @@
             <img src="images/Logo.png" alt="" class="logo">
             <nav>
                 <ul>
-                    <li><a href="">Sky-Cast Home</a></li>
-                    <li><a href="">More Info</a></li>
-                    <li><a href="">Sign-up</a></li>
+                    <li><a href="#">SkyCast Home</a></li>
+                    <li><a href="./pages/about.html">More Info</a></li>
+                    <li><a href="./pages/signup.html">Sign-up</a></li>
                     <li><a href="">Games</a></li>
                     <li><a href="">Updates</a></li>
                 </ul>
@@ -55,7 +68,7 @@
                 <span><img src="images/settingsicon1.png" alt="" class="menu-icon"></span>
                 <div class="dropdown-content">
                     <li><a href="#">Contact-US</a></li>
-                    <li><a href="#">Manage Subscription</a></li>
+                    <li><a href="./pages/subscription.html">Manage Subscription</a></li>
                     <li><a href="#">Packages</a></li>
                 </div>
               </div>
@@ -64,14 +77,14 @@
         </div>
         <div class="row">
             <div class="main">
-                <h2><a href="#">Sky</a> Cast&#8482; </h2> </small>
+                <h2><a href="./pages/signup.html">Sky</a> Cast&#8482; </h2> </small>
                 <h3>Platforms: PC, PS5, Xbox S|X</h3>
                 <!-- Inline Styling -->
-                <a href="#" class="moreinfo"> Click <span style="color: #0ae2ff">Sky</span> to Learn more!
+                <a href="./pages/about.html" class="moreinfo"> Click <span style="color: #0ae2ff">Sky</span> to Learn more!
 
                 </a>
                 <h4>$69.99/yr</h4>
-                <a href="#" class="subscribe">
+                <a href="./pages/signup.html" class="subscribe">
                     <button type="button">Subscribe<img src="images/arrow5.png" alt="Action Button"> <a
                             href=""></a></button>
                 </a>

@@ -204,15 +204,6 @@ button img {
     display: none;
 }
 
-button:hover img {
-    display: block;
-}
-
-button:hover {
-    width: 150px;
-    display: flex;
-    align-items: center;
-}
 
 /*The line left of the main picture */
 .main::after {
